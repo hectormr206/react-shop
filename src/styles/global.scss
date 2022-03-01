@@ -1,0 +1,7 @@
+$base-color: rgb(133, 186, 255);
+$color: rbga(black, 0.88);
+
+body {
+  background-color: $base-color;
+  color: $color;
+}
