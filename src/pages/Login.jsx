@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import '@styles/Login.scss';
-
-import logo from '@logos/logo_yard_sale.svg';
+import logo from '@logos/logo_yard_sale.svg'
 
 const Login = () => {
 	const form = useRef(null);
@@ -10,7 +9,7 @@ const Login = () => {
 		event.preventDefault();
 		const formData = new FormData(form.current);
 		const data = {
-			username: formData.get('email'),
+			usename: formData.get('email'),
 			password: formData.get('password')
 		}
 		console.log(data);
@@ -27,8 +26,7 @@ const Login = () => {
 					<input type="password" name="password" placeholder="*********" className="input input-password" />
 					<button
 						onClick={handleSubmit}
-						className="primary-button login-button"
-					>
+						className="primary-button login-button">
 						Log in
 					</button>
 					<a href="/">Forgot my password</a>
@@ -39,7 +37,7 @@ const Login = () => {
 					Sign up
 				</button>
 			</div>
-		</div>
+		</div >
 	);
 }
 
